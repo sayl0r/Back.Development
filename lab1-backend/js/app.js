@@ -4,38 +4,50 @@ const port = 3000;
 
 // Консольное логирование каждого запроса (для продвинутого уровня)
 app.use((req, res, next) => {
-console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-next();
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+    next();
 });
 
 // 1. Текстовый эндпоинт
 app.get('/', (req, res) => {
-res.send('Добро пожаловать на базовый сервер!');
+    res.send('Добро пожаловать на базовый сервер! (Вариант 7)');
 });
 
-// 2. JSON эндпоинт 1
-app.get('/api/status', (req, res) => {
-res.json({ status: 'ok', uptime: process.uptime() });
+// 2. Простой JSON-эндпоинт 1 (Коллекция Студенты)
+app.get('/api/students', (req, res) => {
+    res.json({
+        students: [
+            { id: 1, name: "Иван Иванов" },
+            { id: 2, name: "Петр Петров" }
+        ],
+        status: "success"
+    });
 });
 
-// 3. JSON эндпоинт 2 (для среднего уровня)
-app.get('/api/info', (req, res) => {
-res.json({ author: 'Student', version: '1.0.0' });
+// 3. Простой JSON-эндпоинт 2 (Коллекция Курсы)
+app.get('/api/courses', (req, res) => {
+    res.json({
+        courses: [
+            { id: 101, title: "Математика" },
+            { id: 102, title: "Программирование" }
+        ],
+        status: "success"
+    });
 });
 
-// 4. JSON эндпоинт с параметром (для продвинутого уровня)
-app.get('/api/users/:id', (req, res) => {
-res.json({
-message: 'Информация о пользователе',
-userId: req.params.id
-});
+// 4. JSON-эндпоинт с параметром в пути (ID студента)
+app.get('/api/students/:id', (req, res) => {
+    res.json({
+        requestedId: req.params.id,
+        status: "success"
+    });
 });
 
 // Обработка 404 (для среднего и продвинутого уровня)
 app.use((req, res) => {
-res.status(404).json({ error: 'Маршрут не найден' });
+    res.status(404).json({ error: 'Маршрут не найден' });
 });
 
 app.listen(port, () => {
-console.log(`Сервер запущен на http://localhost:${port}`);
+    console.log(`Сервер запущен на http://localhost:${port}`);
 });
