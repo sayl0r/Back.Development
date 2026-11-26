@@ -1,0 +1,294 @@
+{
+  "info": {
+    "_postman_id": "d6a28950-8842-490b-9241-e4bc0760f548",
+    "name": "Lab2 CRUD API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60429397",
+    "_collection_link": "https://go.postman.co/collection/60429397-d6a28950-8842-490b-9241-e4bc0760f548?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "games1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/games",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/games/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Elden Ring\",\r\n  \"genre\": \"Souls-like\",\r\n  \"platform\": \"PC\",\r\n  \"rating\": 9.9\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/games",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games4",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"The Witcher 3 Next-Gen\",\r\n  \"genre\": \"RPG\",\r\n  \"platform\": \"PC\",\r\n  \"rating\": 10.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/games/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games5",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"rating\": 9.7\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/games/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games6",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/games/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games7",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/games/9999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "9999"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games8",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/games",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games9",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/games/stats",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "stats"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games10",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/games/1/related",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "1",
+            "related"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games11",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  { \"title\": \"GTA VI\", \"genre\": \"Action\", \"platform\": \"PS5\", \"rating\": 0 },\r\n  { \"title\": \"Hollow Knight: Silksong\", \"genre\": \"Metroidvania\", \"platform\": \"PC\", \"rating\": 0 }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/games/bulk",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "games",
+            "bulk"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "games12",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
