@@ -8,6 +8,6 @@
 | № | Тема | Отчёт |
 |---|------|-------|
 | 1 | Настройка среды разработки и первый HTTP-сервер | [lab1.md](lab1-backend/lab1-readme.md) |
-| 2 | Лабораторная работа №2: HTTP-методы: обработка GET, POST, PUT, DELETE | [lab2.md](lab2-backend/lab2-readme.md) |
+| 2 | HTTP-методы: обработка GET, POST, PUT, DELETE | [lab2.md](lab2-backend/lab2-readme.md) |
 | 3 | Лаба 3 | В разработке |
 | 4 | Лаба 4 | В разработке |
